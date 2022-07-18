@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+  
+    "name": "EmuTeamMate",
+    "description": "___",
+    "version": "1.0",
+    "background": {
+      "scripts": ["background.min.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": [ "polyfill.min.js", "ext.min.js"],
+        "run_at": "document_end"
+      }],
+    "browser_action": {
+      "default_icon": "/images/HackIcon.png"
+    }
+  }
